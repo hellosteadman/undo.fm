@@ -11,7 +11,7 @@ $enable-deprecation-messages: false;
 $enable-important-utilities: true;
 
 $white: #fff;
-$light: #F3F2E9;
+$light: #F0F0F2;
 $black: #000;
 $blue: #D3E5EF;
 $purple: #E8DEEE;
@@ -21,7 +21,8 @@ $orange: #FADEC9;
 $yellow: #FDECC8;
 $green: #DBEDDB;
 $dark: #0E323A;
-$primary: #2483E2;
+$primary: #0E323A;
+$secondary: #B0A793;
 $danger: #EB5757;
 $link-color: #73716E;
 
@@ -53,6 +54,6 @@ $min-contrast-ratio: 3.5;
 $link-shade-percentage: 20%;
 $nav-link-color: $dark;
 $nav-link-hover-color: shift-color($nav-link-color, $link-shade-percentage);
-$component-active-bg: $primary;
+$component-active-bg: $dark;
 $headings-font-weight: 700;
 $bootstrap-icons-font-dir: '~bootstrap-icons/font/fonts';

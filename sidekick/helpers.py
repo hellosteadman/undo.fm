@@ -63,7 +63,7 @@ def create_og_image(title, subtitle):
             (left_padding, y),
             line,
             font=title_font,
-            fill='#F3F2E9'
+            fill='#0E323A'
         )
 
         y += 86
@@ -75,7 +75,7 @@ def create_og_image(title, subtitle):
             (left_padding, y),
             line,
             font=subtitle_font,
-            fill='#F3F2E9'
+            fill='#0E323A'
         )
 
         y += 48

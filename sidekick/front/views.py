@@ -16,19 +16,21 @@ from .models import Page
 
 class IndexView(SEOMixin, OpenGraphMixin, LinkedDataMixin, TemplateView):
     template_name = 'front/index.html'
-    seo_title = 'Blockholm'
-    seo_description = 'Notion blog and newsletter with tips and templates'
+    seo_title = 'Undo'
+    seo_description = 'A podcast history of productivity'
     og_type = 'website'
-    og_title = 'Blockholm'
-    og_description = 'Reclaim your sanity and do your best work with Notion.'
+    og_title = 'Undo'
+    og_description = (
+        'The podcast exploring how history’s outliers got stuff done'
+    )
 
     ld_type = 'WebSite'
     ld_attributes = {
-        'name': 'Blockholm',
+        'name': 'Undo',
         'description': (
-            'A resource for creative entrepreneurs offering tips, techniques, '
-            'templates, and news for using Notion to retain sanity, especially '
-            'for those with neurodivergent minds.'
+            'An examination into how history’s oddballs, outliers, '
+            'and overachievers built systems to help them do their '
+            'best work.'
         ),
         'publisher': {
             '@type': 'Person',
@@ -44,7 +46,7 @@ class IndexView(SEOMixin, OpenGraphMixin, LinkedDataMixin, TemplateView):
             },
             'contactPoint': {
                 '@type': 'ContactPoint',
-                'email': 'editor@blockholm.co',
+                'email': 'editor@undo.fm',
                 'url': 'https://hellosteadman.com/',
                 'contactType': 'customer service'
             },

@@ -257,7 +257,7 @@ class Subscriber(models.Model):
         posts = posts.order_by('published')[:5]
         render_to_inbox(
             (self.name, self.email),
-            'Your weekly digest from Blockholm',
+            'Your weekly digest from Undo',
             'newsletter/digest_email.html',
             {
                 'name': name,

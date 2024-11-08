@@ -6,7 +6,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = not not os.getenv('DEBUG')
-DOMAIN = os.getenv('DOMAIN', 'blockholm.co')
+DOMAIN = os.getenv('DOMAIN', 'undo.fm')
 ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
@@ -130,10 +130,10 @@ NOTION = {
 
 ANYMAIL = {
     'MAILERSEND_API_TOKEN': os.getenv('MAILERSEND_API_TOKEN'),
-    'MAILERSEND_SENDER_DOMAIN': 'blockholm.co'
+    'MAILERSEND_SENDER_DOMAIN': 'undo.fm'
 }
 
 EMAIL_BACKEND = 'anymail.backends.mailersend.EmailBackend'
-DEFAULT_FROM_NAME = 'Blockholm'
-DEFAULT_FROM_EMAIL = 'updates@blockholm.co'
-DEFAULT_REPLYTO_EMAIL = 'editor@blockholm.co'
+DEFAULT_FROM_NAME = 'Mark Steadman'
+DEFAULT_FROM_EMAIL = 'hello@undo.fm'
+DEFAULT_REPLYTO_EMAIL = 'hello@undo.fm'

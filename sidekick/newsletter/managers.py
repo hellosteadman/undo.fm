@@ -52,7 +52,7 @@ class SubscriberManager(Manager):
 
         render_to_inbox(
             (name, email),
-            'Ready to sign up to Blockholm?',
+            'Ready to get Undo in your inbox?',
             'newsletter/confirm_email.html',
             {
                 'name': first_name,

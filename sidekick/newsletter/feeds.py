@@ -16,8 +16,8 @@ class ContenetEncodedRss201rev2Feed(feedgenerator.Rss201rev2Feed):
 
 class PostFeed(Feed):
     feed_type = ContenetEncodedRss201rev2Feed
-    title = 'Blockholm'
-    link = 'https://blockholm.co/posts/'
+    title = 'Undo'
+    link = 'https://undo.fm/posts/'
     description = 'Tips and templates to help you get the most out of Notion.'
     author_name = 'Mark Steadman'
     item_author_name = 'Mark Steadman'

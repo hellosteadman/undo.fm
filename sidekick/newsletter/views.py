@@ -40,10 +40,14 @@ class PostMixin(SEOMixin, LinkedDataMixin):
 class PostListView(PostMixin, OpenGraphMixin, ListView):
     paginate_by = 24
     og_title = 'Post archive'
-    og_description = 'Drown in an ocean of posts about Notion.'
+    og_description = (
+        'Spend your time reading about productivity and avoid getting '
+        'anything done.'
+    )
+
     ld_type = 'Blog'
     ld_attributes = {
-        'name': 'Blockholm'
+        'name': 'Undo'
     }
 
     def get_tags(self):
@@ -88,7 +92,7 @@ class PostListView(PostMixin, OpenGraphMixin, ListView):
         return queryset.distinct()
 
     def get_seo_title(self):
-        title = 'Blockholm posts'
+        title = 'Undo blog'
 
         if tags := self.get_tags():
             title += ' tagged %s' % ', '.join(
@@ -159,7 +163,7 @@ class PostDetailView(PostMixin, OpenGraphArticleMixin, DetailView):
             },
             'publisher': {
                 '@type': 'WebSite',
-                'name': 'Blockholm',
+                'name': 'Undo',
                 'url': self.request.build_absolute_uri('/')
             }
         }
@@ -203,7 +207,7 @@ class PostDetailView(PostMixin, OpenGraphArticleMixin, DetailView):
 class CreateSubscriberView(SEOMixin, FormView):
     template_name = 'newsletter/subscriber_form.html'
     form_class = SubscriberForm
-    seo_title = 'Subscribe to the Blockholm newsletter'
+    seo_title = 'Subscribe to the Undo newsletter'
 
     def form_valid(self, form):
         form.save()

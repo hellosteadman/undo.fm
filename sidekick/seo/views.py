@@ -74,8 +74,8 @@ class SEOMixin(object):
 class OpenGraphMixin(object):
     og_locale = 'en-GB'
     og_type = 'article'
-    og_title = 'Blockholm'
-    og_description = 'Tips and templates to help you get the most of Notion.'
+    og_title = 'Undo'
+    og_description = 'How history’s outliers got stuff done'
     og_site_name = og_title
 
     twitter_card = 'summary_large_image'

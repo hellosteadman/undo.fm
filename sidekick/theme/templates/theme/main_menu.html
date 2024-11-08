@@ -1,4 +1,4 @@
-<nav class="navbar" data-bs-theme="dark">
+<nav class="navbar">
     <ul class="navbar-nav flex-row margin-end-auto margin-bottom-2 margin-bottom-tablet-0">
         {% for link in menus.header %}
             <li class="nav-item show-none show-tablet-inline margin-start-4">
@@ -7,5 +7,5 @@
         {% endfor %}
     </ul>
 
-    <a href="{% url 'create_subscriber' %}" class="btn btn-outline-light margin-start-tablet-3">Subscribe</a>
+    <a href="{% url 'create_subscriber' %}" class="btn btn-outline-dark margin-start-tablet-3">Subscribe</a>
 </nav>
